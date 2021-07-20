@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project2
+  labels:
+    app: project2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project2
+  template:
+    metadata:
+      labels:
+        app: project2
+    spec:
+      containers:
+        - name: project2
+          image: someshj21/miniproject2
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: Always
