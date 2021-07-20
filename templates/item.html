@@ -1,12 +1,12 @@
 <html>
    <body>
-      <form action = "{{ url_for('additem') }}" method = "POST">
+      <form action = "/additem" method = "POST">
          <h3>ITEM DETAIL</h3>
          ITEM-NAME<br>
          <input type = "text" name = "nm" /></br>
          
          PRICE<br>
-         <input type = "int" name = "pr" /><br>
+         <input type = "text" name = "pr" /><br>
          <input type = "submit" value = "ADD" /><br>
       </form>
    </body>
